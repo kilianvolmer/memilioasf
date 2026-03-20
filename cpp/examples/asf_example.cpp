@@ -115,7 +115,7 @@ mio::TimeSeries<ScalarType> simulate(ScalarType epsilon = 0.2, ScalarType beta =
 int main()
 {
     auto result = simulate();
-    mio::log_debug("The result has simulated until {}.", result.get_last_value[0]);
+    mio::log_debug("The result has simulated until {}.", result.get_last_time());
     return 0;
 }
 #endif

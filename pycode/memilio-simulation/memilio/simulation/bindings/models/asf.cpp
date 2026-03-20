@@ -23,7 +23,7 @@
 
 // Macro to skip main() in jolly_bindings.cpp
 #define ASF_BINDINGS_SKIP_MAIN
-#include "asf.cpp"
+#include "asf_example.cpp"
 
 namespace py = pybind11;
 
