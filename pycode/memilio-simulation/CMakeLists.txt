@@ -146,6 +146,13 @@ add_pymio_module(_simulation_omseirs4
     SOURCES memilio/simulation/bindings/models/omseirs4.cpp
 )
 
+add_pymio_module(_simulation_asf
+    LINKED_LIBRARIES memilio smm
+    SOURCES memilio/simulation/bindings/models/asf.cpp
+)
+target_include_directories(_simulation_asf PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../cpp/examples)
+
+
 # install all shared memilio libraries, which were given as "LINKED_LIBRARIES" to add_pymio_module
 list(REMOVE_DUPLICATES PYMIO_MEMILIO_LIBS_LIST)
 
